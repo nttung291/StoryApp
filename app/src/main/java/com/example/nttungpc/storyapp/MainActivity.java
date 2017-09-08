@@ -9,11 +9,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.description_layout);
-//        lvStory = (ListView) findViewById(R.id.lv_story);
-//        StoryAdapter storyAdapter = new StoryAdapter(this,R.layout.item_list_story,DatabaseHandle.getInstance(this).getListStory());
-//        DatabaseHandle.getInstance(this).getListStory();
-//        lvStory.setAdapter(storyAdapter);
-        getSupportActionBar().hide();
+        setContentView(R.layout.activity_main);
+        lvStory = (ListView) findViewById(R.id.lv_story);
+        StoryAdapter storyAdapter = new StoryAdapter(this,R.layout.item_list_story,DatabaseHandle.getInstance(this).getListStory());
+        DatabaseHandle.getInstance(this).getListStory();
+        lvStory.setAdapter(storyAdapter);
+
     }
 }
